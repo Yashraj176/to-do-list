@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card.dark-mode {
+    background: rgba(50, 50, 50, 0.8);
+    color: white;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.list-group-item.completed {
+    background-color: #d4edda;
+    color: #155724;
+    text-decoration: line-through;
+}
+
+.list-group-item.overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.list-group-item.low-priority {
+    border-left: 5px solid green;
+}
+
+.list-group-item.medium-priority {
+    border-left: 5px solid orange;
+}
+
+.list-group-item.high-priority {
+    border-left: 5px solid red;
+}
+
+.dark-mode .list-group-item {
+    background-color: rgba(50, 50, 50, 0.7);
+    color: white;
+}
+
+.list-group-item .btn {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.list-group-item .completeBtn {
+    background-color: #28a745;
+    border: none;
+}
+
+.list-group-item .editBtn {
+    background-color: #ffc107;
+    border: none;
+}
+
+.list-group-item .deleteBtn {
+    background-color: #dc3545;
+    border: none;
+}
